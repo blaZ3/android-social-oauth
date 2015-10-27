@@ -1,0 +1,6 @@
+FB
+get request token
+https://www.facebook.com/dialog/oauth?client_id=&redirect_uri=
+
+get access token
+https://graph.facebook.com/oauth/access_token?client_id=&redirect_uri=&client_secret=&code=
