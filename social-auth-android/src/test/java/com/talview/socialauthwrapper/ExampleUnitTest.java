@@ -1,4 +1,4 @@
-package com.talview.socialAuthtestapp;
+package com.talview.socialauthandroid;
 
 import org.junit.Test;
 

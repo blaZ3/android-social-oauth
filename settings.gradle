@@ -1,1 +1,1 @@
-include ':app', ':socialauthwrapper'
+include ':app', ':social-auth-android'

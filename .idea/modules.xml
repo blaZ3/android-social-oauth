@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SocialAuthAndroid.iml" filepath="$PROJECT_DIR$/SocialAuthAndroid.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/socialauthwrapper/socialauthwrapper.iml" filepath="$PROJECT_DIR$/socialauthwrapper/socialauthwrapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/social-auth-android/social-auth-android.iml" filepath="$PROJECT_DIR$/social-auth-android/social-auth-android.iml" />
     </modules>
   </component>
 </project>
