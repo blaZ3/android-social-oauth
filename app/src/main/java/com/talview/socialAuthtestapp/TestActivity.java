@@ -1,6 +1,5 @@
 package com.talview.socialAuthtestapp;
 
-import android.app.Dialog;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -10,42 +9,25 @@ import com.talview.socialauthandroid.SocialAuthManager;
 
 public class TestActivity extends AppCompatActivity {
 
-    Dialog dialog;
     SocialAuthManager socialAuthManager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
 
+
+        String github_callback_url = "callback_url";
+        String github_app_id = "app_id";
+        String github_app_secret = "app_secret";
+
+        //TODO replace callback_url, app_id and app_secret with your respective values
+
         socialAuthManager = new SocialAuthManager(TestActivity.this,
-                SocialAuthManager.LINKEDIN,
-                "https://engage.talview.com/ouath/linkedin/callback",
-                "75h5ezfyrphus0",
-                "4Sm6CX1x2Mikbk6U");
+                SocialAuthManager.GITHUB,
+                github_callback_url,
+                github_app_id,
+                github_app_secret);
 
-//        socialAuthManager = new SocialAuthManager(TestActivity.this,
-//                SocialAuthManager.GITHUB,
-//                "https://engage.talview.com/oauth/github/callback",
-//                "e3af420803f70817eaaa",
-//                "1180773fafdd99a3b93d489b14d694a396c0287c");
-
-//        socialAuthManager = new SocialAuthManager(TestActivity.this,
-//                SocialAuthManager.STACKOVERFLOW,
-//                "https://engage.talview.com/oauth/stackoverflow/callback",
-//                "5679",
-//                "K59S)2rl65w2j0wGzq1Ijg((");
-
-//        socialAuthManager = new SocialAuthManager(TestActivity.this,
-//                SocialAuthManager.FACEBOOK,
-//                "https://engage.talview.com/ouath/facebook/callback",
-//                "429353233928451",
-//                "36febae030f7c7bd454b099d7fb53444");
-
-//        socialAuthManager = new SocialAuthManager(TestActivity.this,
-//                SocialAuthManager.TWITITER,
-//                "https://engage.talview.com/ouath/twitter/callback",
-//                "XFruaEEc8MJgdGqSM21oBZ0tb",
-//                "fomg3T0P2pj0mfL75k9Ms3NrZiFaSU6Pa5kgJMmmWSBiIKngZN");
     }
 
 
