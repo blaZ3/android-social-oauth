@@ -8,13 +8,13 @@ version = '0.9' // Change this to match your version number
 
 android {
     compileSdkVersion 23
-    buildToolsVersion '22.0.1'
+    buildToolsVersion '23.0.2'
 
     defaultConfig {
         minSdkVersion 11
         targetSdkVersion 21
         versionCode 1
-        versionName "0.9"
+        versionName "1.0"
     }
     buildTypes {
     }
@@ -55,13 +55,13 @@ bintray {
     key = '75feacfc9a500cb65346e8964d53ec2c428d2a75'
     pkg {
         repo = 'maven'
-        name = 'com.talview.socialauthandroid'
+        name = 'social-auth-android'
 
         version {
             name = 'socialauthandroid'
             desc = 'Android social auth library for sign in with Facebook,Twitter,LinkedIn .etc'
             released  = new Date()
-            vcsTag = '0.9'
+            vcsTag = '1.0'
         }
 
         licenses = ['Apache-2.0']

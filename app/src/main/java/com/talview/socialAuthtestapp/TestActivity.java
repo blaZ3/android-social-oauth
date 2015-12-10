@@ -17,11 +17,11 @@ public class TestActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
 
-//        socialAuthManager = new SocialAuthManager(TestActivity.this,
-//                SocialAuthManager.LINKEDIN,
-//                "https://engage.talview.com/ouath/linkedin/callback",
-//                "75h5ezfyrphus0",
-//                "4Sm6CX1x2Mikbk6U");
+        socialAuthManager = new SocialAuthManager(TestActivity.this,
+                SocialAuthManager.LINKEDIN,
+                "https://engage.talview.com/ouath/linkedin/callback",
+                "75h5ezfyrphus0",
+                "4Sm6CX1x2Mikbk6U");
 
 //        socialAuthManager = new SocialAuthManager(TestActivity.this,
 //                SocialAuthManager.GITHUB,
@@ -41,11 +41,11 @@ public class TestActivity extends AppCompatActivity {
 //                "429353233928451",
 //                "36febae030f7c7bd454b099d7fb53444");
 
-        socialAuthManager = new SocialAuthManager(TestActivity.this,
-                SocialAuthManager.TWITITER,
-                "https://engage.talview.com/ouath/twitter/callback",
-                "XFruaEEc8MJgdGqSM21oBZ0tb",
-                "fomg3T0P2pj0mfL75k9Ms3NrZiFaSU6Pa5kgJMmmWSBiIKngZN");
+//        socialAuthManager = new SocialAuthManager(TestActivity.this,
+//                SocialAuthManager.TWITITER,
+//                "https://engage.talview.com/ouath/twitter/callback",
+//                "XFruaEEc8MJgdGqSM21oBZ0tb",
+//                "fomg3T0P2pj0mfL75k9Ms3NrZiFaSU6Pa5kgJMmmWSBiIKngZN");
     }
 
 

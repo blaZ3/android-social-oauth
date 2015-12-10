@@ -6,6 +6,7 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.graphics.drawable.ColorDrawable;
 import android.support.annotation.NonNull;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.webkit.WebChromeClient;
@@ -149,6 +150,9 @@ public class SocialAuthManager {
                 String oauth_nonce = MiscHelpers.randomString(10);
                 String oauth_timestamp = ""+MiscHelpers.getTimestamp();
 
+                Log.d("TWITTER oauth_nonce",oauth_nonce);
+                Log.d("TWITTER oauth_timestamp",oauth_timestamp);
+
                 Map<String, String> map = new TreeMap<String, String>();
                 map.put("oauth_signature_method", "HMAC-SHA1");
                 map.put("oauth_version", "1.0");
@@ -158,7 +162,12 @@ public class SocialAuthManager {
 //                map.put("oauth_token", ""); //not applicable for request_token
 
                 try{
-                    String oauth_signature = MiscHelpers.getOAuthSignature(map, app_secret, "", "https://api.twitter.com/oauth/request_token");
+                    String oauth_signature = MiscHelpers.getOAuthSignature(map,
+                            app_secret,
+                            "",
+                            "https://api.twitter.com/oauth/request_token");
+
+                    Log.d("TWITTER oauth_signature",oauth_signature);
 
                     String Authorization = "OAuth oauth_consumer_key=\""+app_id+"\"," +
                             "oauth_signature_method=\"HMAC-SHA1\"," +
@@ -166,6 +175,8 @@ public class SocialAuthManager {
                             "oauth_nonce=\""+oauth_nonce+"\"," +
                             "oauth_version=\"1.0\"," +
                             "oauth_signature=\""+oauth_signature+"\"";
+
+                    Log.d("TWITTER Authorization",Authorization);
 
                     progressDialog.show();
                     Ion.with(context)
