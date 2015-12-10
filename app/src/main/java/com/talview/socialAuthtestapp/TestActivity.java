@@ -35,7 +35,11 @@ public class TestActivity extends AppCompatActivity {
         socialAuthManager.doAuthorise(new SocialAuthManager.SocialAuthInterface() {
             @Override
             public void authCallback(boolean success, int provider, String access_token, String access_token_secret) {
-                Toast.makeText(getApplicationContext(), "Koi " + access_token+":"+access_token_secret, Toast.LENGTH_LONG).show();
+                if (success){
+                    Toast.makeText(getApplicationContext(), "Success " + access_token+":"+access_token_secret, Toast.LENGTH_LONG).show();
+                }else{
+                    Toast.makeText(getApplicationContext(), "Error occurred", Toast.LENGTH_LONG).show();
+                }
             }
         });
     }
