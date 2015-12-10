@@ -1,7 +1,7 @@
 package com.talview.socialauthandroid;
 
 /**
- * Created by root on 29/9/15.
+ * Created by vivek  on 29/9/15.
  */
 public class SocialAuthConstants {
 

@@ -17,7 +17,7 @@ import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
 
 /**
- * Created by root on 19/10/15.
+ * Created by vivek  on 19/10/15.
  */
 public class MiscHelpers {
 
@@ -42,7 +42,6 @@ public class MiscHelpers {
 
     }
 
-    //Map<String, String> map = new TreeMap<String, String>();
     public static String getOAuthSignature(Map<String, String> map,
                                            String app_secret,
                                            String oauth_token_secret,

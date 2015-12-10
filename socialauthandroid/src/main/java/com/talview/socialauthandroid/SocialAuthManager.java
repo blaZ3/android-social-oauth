@@ -29,7 +29,7 @@ import java.util.Map;
 import java.util.TreeMap;
 
 /**
- * Created by root on 19/10/15.
+ * Created by vivek  on 19/10/15.
  */
 public class SocialAuthManager {
 

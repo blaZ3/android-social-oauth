@@ -16,7 +16,7 @@ import com.koushikdutta.ion.Ion;
 import com.talview.socialauthandroid.helpers.MiscHelpers;
 
 /**
- * Created by root on 19/10/15.
+ * Created by vivek  on 19/10/15.
  */
 public class LinkedInWebViewClient extends WebViewClient {
 
