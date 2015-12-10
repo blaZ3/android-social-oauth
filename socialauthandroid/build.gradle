@@ -51,8 +51,8 @@ dependencies {
 }
 
 bintray {
-    user = 'vivek-as'
-    key = '75feacfc9a500cb65346e8964d53ec2c428d2a75'
+    user = ''
+    key = ''
     pkg {
         repo = 'maven'
         name = 'social-auth-android'
